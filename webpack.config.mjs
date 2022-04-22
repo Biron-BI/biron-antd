@@ -1,7 +1,8 @@
-const path = require("path");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+import path from "path"
+import  MiniCssExtractPlugin from "mini-css-extract-plugin"
+import CopyWebpackPlugin from 'copy-webpack-plugin'
 
-module.exports = {
+export default {
   entry: "./src/index.ts",
   devtool: "source-map",
   mode: "development",
@@ -49,5 +50,13 @@ module.exports = {
     open: true,
     hot: true
   },
-  plugins: [new MiniCssExtractPlugin()],
+  plugins: [new MiniCssExtractPlugin(), new CopyWebpackPlugin({
+    patterns: [
+      {
+        from: "node_modules/antd",
+        to: 'antd',
+      },
+    ],
+  })
+  ],
 }

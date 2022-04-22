@@ -1,6 +1,5 @@
 import { hot } from "react-hot-loader";
 import React, {FunctionComponent} from "react"
-import "theme.less"
 
 export interface AppProps {
   title?: string
