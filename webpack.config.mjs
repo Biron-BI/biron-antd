@@ -5,10 +5,23 @@ import CopyWebpackPlugin from 'copy-webpack-plugin'
 export default {
   entry: "./src/index.ts",
   devtool: "source-map",
-  mode: "development",
+  target: [
+    'web',
+    'es2020'
+  ],
   output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "index.js"
+    path: path.resolve("dist"),
+    filename: 'index.esm.js',
+    library: {
+      type: 'module'
+    }
+  },
+  experiments: {
+    outputModule: true
+  },
+  externals: {
+    'react': 'react',
+    'react-dom': 'react-dom',
   },
   module: {
     rules: [
