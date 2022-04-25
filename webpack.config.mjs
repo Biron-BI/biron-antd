@@ -11,7 +11,7 @@ export default {
   ],
   output: {
     path: path.resolve("dist"),
-    filename: 'index.esm.js',
+    filename: "[name].esm.js",
     library: {
       type: 'module'
     }
@@ -70,6 +70,5 @@ export default {
         to: 'antd',
       },
     ],
-  })
-  ],
+  })],
 }
