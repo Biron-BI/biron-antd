@@ -66,8 +66,8 @@ export default {
   plugins: [new MiniCssExtractPlugin(), new CopyWebpackPlugin({
     patterns: [
       {
-        from: "node_modules/antd",
-        to: 'antd',
+        from: "node_modules/antd/lib",
+        to: 'antd/lib',
       },
     ],
   })],
