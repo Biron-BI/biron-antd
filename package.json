@@ -2,7 +2,7 @@
   "name": "biron-antd",
   "version": "1.0.0",
   "types": "./dist/index.d.ts",
-  "module": "./dist/index.esm.js",
+  "module": "./dist/main.esm.js",
   "license": "MIT",
   "type": "module",
   "scripts": {
