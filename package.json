@@ -1,14 +1,18 @@
 {
-  "name": "biron-antd",
-  "version": "1.0.0",
+  "name": "@biron-data/biron-antd",
+  "version": "0.0.1",
   "types": "./dist/index.d.ts",
   "module": "./dist/main.esm.js",
-  "license": "MIT",
+  "license": "AGPL-3.0-only",
   "type": "module",
   "scripts": {
     "build": "webpack",
     "start": "webpack-dev-server"
   },
+  "files": [
+    "dist/**/*"
+  ],
+  "homepage": "https://github.com/Biron-BI/biron-antd#readme",
   "devDependencies": {
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.6",
