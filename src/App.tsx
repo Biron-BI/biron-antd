@@ -1,4 +1,3 @@
-import { hot } from "react-hot-loader";
 import React, {FunctionComponent} from "react"
 
 export interface AppProps {
@@ -13,4 +12,4 @@ const App:FunctionComponent<AppProps> = () => {
     );
 };
 
-export default hot(module)(App);
+export default App

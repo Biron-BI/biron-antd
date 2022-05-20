@@ -69,6 +69,14 @@ export default {
         from: "node_modules/antd/lib",
         to: 'antd/lib',
       },
+      {
+        from: "node_modules/@heroicons/react/outline",
+        to: 'icons/outline',
+      },
+      {
+        from: "node_modules/@heroicons/react/solid",
+        to: 'icons/solid',
+      },
     ],
   })],
 }
