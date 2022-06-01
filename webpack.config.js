@@ -1,23 +1,21 @@
-import path from "path"
-import  MiniCssExtractPlugin from "mini-css-extract-plugin"
-import CopyWebpackPlugin from 'copy-webpack-plugin'
+const path = require("path")
+const MiniCssExtractPlugin = require("mini-css-extract-plugin")
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
-export default {
+module.exports = {
   entry: "./src/index.ts",
   devtool: "source-map",
   target: [
     'web',
-    'es2020'
+    'es2015'
   ],
   output: {
     path: path.resolve("dist"),
-    filename: "[name].esm.js",
-    library: {
-      type: 'module'
-    }
-  },
-  experiments: {
-    outputModule: true
+    filename: "[name].js",
+    libraryTarget: 'umd',
+    library: 'lib',
+    umdNamedDefine: true,
+    globalObject: `(typeof self !== 'undefined' ? self : this)`
   },
   externals: {
     'react': 'react',
@@ -34,7 +32,10 @@ export default {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader"
+          loader: "babel-loader",
+          options: {
+            presets: ['@babel/preset-env', "es2015", "es2016"],
+          }
         }
       },
       {

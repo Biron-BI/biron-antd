@@ -1,10 +1,9 @@
 {
   "name": "@biron-data/biron-antd",
   "version": "0.2.0",
-  "types": "./dist/index.d.ts",
-  "module": "./dist/main.esm.js",
   "license": "AGPL-3.0-only",
-  "type": "module",
+  "main": "dist/main.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "webpack",
     "start": "webpack-dev-server"

@@ -9,8 +9,9 @@
     "noUnusedLocals": true,
     "outDir": "dist",
     "sourceMap": true,
-    "module": "es6",
-    "target": "es5"
+    "module": "commonjs",
+    "target": "es5",
+    "lib": ["dom", "es2015"]
   },
   "include": ["src"],
   "exclude": ["node_modules", "dist"]
