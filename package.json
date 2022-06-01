@@ -37,6 +37,6 @@
   },
   "dependencies": {
     "@heroicons/react": "^1.0.6",
-    "antd": "^4.19.5"
+    "antd": "4.19.5"
   }
 }
