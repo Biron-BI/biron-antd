@@ -14,9 +14,10 @@
 @disabled-color: #DCE0E4;
 @blue-default: #425FF0;
 @blue-active: #ECEFFE;
+@light-grey: #EDEFF1;
 
-@text-color: fade(@black, 85%);
-@text-color-secondary: fade(@black, 45%);
+@text-color: #1B1B1D;
+@text-color-secondary: fade(@text-color, 45%);
 @text-color-inverse: @black;
 @icon-color-hover: fade(@black, 75%);
 @heading-color: fade(@black, 85%);
@@ -27,6 +28,7 @@
 
 @background-color-light: fade(@white, 4%);
 @background-color-base: fade(@white, 8%);
+@background-color-grey: #F6F6F8;
 @descriptions-bg: @background-color-light;
 @disabled-bg: @background-color-base;
 @drawer-bg: @popover-background;
@@ -36,15 +38,15 @@
 @body-background: rgb(237, 239, 241);
 
 /* Popovers */
-@popover-background: #F6F6F8;
+@popover-background: @background-color-grey;
 @popover-customize-border-color: #3a3a3a;
 @popover-padding-horizontal: 5px;
 @popover-bg: @popover-background;
 
 /* Borders */
 @border-radius-base: 4px;
-@border-color-base: #dce0e4;
-@border-color-split: @border-color-base;
+@border-color-base: @light-grey;
+@border-color-split: #dce0e4;
 
 /* Checkbox */
 @checkbox-check-bg: transparent;
@@ -80,9 +82,13 @@
 @select-background: white;
 @select-dropdown-bg: @popover-background;
 @select-clear-background: @component-background;
-@select-selection-item-bg: fade(@white, 8);
+@select-selection-item-bg: @background-color-grey;
 @select-selection-item-border-color: @border-color-split;
 @select-height-without-border: 40px;
+@select-item-selected-bg: @blue-active;
+@select-selection-item-border-color: transparent;
+@select-border-color: @light-grey;
+@input-border-color: @light-grey;
 
 /* Select multiple: filter multiple selector */
 @select-multiple-disabled-background: @component-background;
@@ -178,6 +184,7 @@
 @menu-dark-bg: @popover-background;
 @menu-popup-bg: @popover-background;
 @menu-item-vertical-margin: 0px;
+@menu-item-boundary-margin: 0px;
 @menu-bg: #27272A;
 @menu-item-color: white;
 @menu-item-active-bg: @primary-color;
@@ -190,7 +197,7 @@
 
 /* Layout */
 @layout-body-background: @body-background;
-@layout-header-background: #EDEFF1;
+@layout-header-background: @light-grey;
 @layout-trigger-background: #262626;
 @layout-sider-background: #27272A;
 @layout-body-background: rgb(237, 239, 241);
@@ -202,9 +209,9 @@
 @modal-header-bg: @popover-background;
 @modal-content-bg: @popover-background;
 @modal-header-border-width: 1px;
-@modal-header-border-color-split: #EDEFF1;
+@modal-header-border-color-split: @light-grey;
 @modal-footer-border-width: 1px;
-@modal-footer-border-color-split: #EDEFF1;
+@modal-footer-border-color-split: @light-grey;
 
 
 /* Button */
