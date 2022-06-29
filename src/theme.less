@@ -4,7 +4,9 @@
 @import '~antd/dist/antd.less';
 
 /* Font */
-@font-family: 'Poppins';
+@font-family: 'Poppins', sans-serif;
+@font-variant-base: normal;
+@font-feature-settings-base: normal;
 
 /* Colors */
 @primary-color: #425FF0;
@@ -33,14 +35,16 @@
 @disabled-bg: @background-color-base;
 @drawer-bg: @popover-background;
 
+@padding-sm: 4px;
+
 /* Global */
 @line-height-base: 38px;
 @body-background: rgb(237, 239, 241);
 
 /* Popovers */
-@popover-background: @background-color-grey;
+@popover-background: @white;
 @popover-customize-border-color: #3a3a3a;
-@popover-padding-horizontal: 5px;
+@popover-padding-horizontal: 8px;
 @popover-bg: @popover-background;
 
 /* Borders */
@@ -53,7 +57,7 @@
 
 
 /* Radio used for granularity and chart type selector*/
-@radio-button-checked-bg: #ECEFFE;
+@radio-button-checked-bg: @blue-active;
 @radio-button-bg: white;
 
 @radio-solid-checked-color: @white;
@@ -62,7 +66,7 @@
 @radio-disabled-button-checked-bg: fade(@white, 20%);
 @radio-disabled-button-checked-color: @disabled-color;
 
-@radio-button-color: rgba(0, 0, 0, 0.65);
+@radio-button-color: @text-color;
 @radio-dot-color: #425FF0;
 
 /* Input */
@@ -89,6 +93,13 @@
 @select-selection-item-border-color: transparent;
 @select-border-color: @light-grey;
 @input-border-color: @light-grey;
+@select-item-selected-color: @primary-color;
+@select-item-selected-font-weight: 400;
+@select-item-active-bg: @blue-active;
+@select-dropdown-edge-child-vertical-padding: 4px;
+@control-padding-horizontal: 12px;
+@select-multiple-item-spacing-half: 4px;
+@select-selection-height: 30px;
 
 /* Select multiple: filter multiple selector */
 @select-multiple-disabled-background: @component-background;
@@ -106,7 +117,8 @@
 
 
 /* Tooltip */
-@tooltip-bg: #434343;
+@tooltip-bg: @white;
+@tooltip-color: inherit;
 
 
 /* Messages */
@@ -207,8 +219,8 @@
 
 
 /* Modal */
-@modal-header-bg: @popover-background;
-@modal-content-bg: @popover-background;
+@modal-header-bg: @background-color-grey;
+@modal-content-bg: @background-color-grey;
 @modal-header-border-width: 1px;
 @modal-header-border-color-split: @light-grey;
 @modal-footer-border-width: 1px;
