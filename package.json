@@ -1,6 +1,6 @@
 {
   "name": "@biron-data/biron-antd",
-  "version": "0.8.0",
+  "version": "1.0.0",
   "license": "AGPL-3.0-only",
   "main": "dist/main.js",
   "types": "dist/index.d.ts",
